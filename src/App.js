@@ -1,13 +1,28 @@
+import { useState, useEffect } from 'react'
 import Navbar from "./components/Navbar"
 import Lift from "./components/Lift"
 
 function App() {
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position)
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    }
+  }, [])
+
   return (
     <div className="App">
 
       <Navbar />
 
-      <Lift />
+      <Lift sp={scrollPosition} />
 
       <div id="home" className="layer">
         <p className="home-hello">Hello,</p>
