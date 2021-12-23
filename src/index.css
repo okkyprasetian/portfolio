@@ -154,3 +154,21 @@ a {
   text-align: justify;
   color: white;
 }
+
+/* ===== CONTACT ME ===== */
+
+#contact {
+  padding-top: 15vh;
+}
+
+.contact-head {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+
+.contact-p {
+  width: 40%;
+  font-size: 1.5rem;
+  letter-spacing: 0.06rem;
+  line-height: 2.3rem;
+}

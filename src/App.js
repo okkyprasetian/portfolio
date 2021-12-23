@@ -32,7 +32,7 @@ function App() {
 
 
       <div id="portfolio" className="layer">
-        <h2>My Portfolio</h2>
+        <h2>MY PORTFOLIO</h2>
         <p>A collection of projects i've built</p>
       </div>
 
@@ -45,10 +45,12 @@ function App() {
       </div>
 
       <div id="contact" className="layer">
-        <h2>Contact Me</h2>
-        <p className="contact-p">
-          My inbox is always open, Just contact me. Wheter you only want to say hi or invite me in your project. In case you inviting me, let us create great project together!
-        </p>
+        <h2 className="contact-head">CONTACT ME</h2>
+        <div className="contact-content">
+          <p className="contact-p">
+            My inbox is always open, Just contact me. Wheter you only want to say hi or invite me in your project. In case you inviting me, let us create great project together!
+          </p>
+        </div>
       </div>
 
     </div>
