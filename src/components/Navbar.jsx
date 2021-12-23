@@ -1,16 +1,18 @@
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
+
 const Navbar = () => {
     return (
-        <nav>
-            <h2 className="logo">Okky Prasetia</h2>
+        <nav className="nav">
+            <h2 className="logo">Eiyuulia</h2>
             <div className="nav-right">
                 <div className="menu">
-                    <a href="/">Project</a>
-                    <a href="/">About</a>
-                    <a href="/">Contact</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
                 </div>
                 <div className="socmed">
-                    <a href="/">Git</a>
-                    <a href="/">In</a>
+                    <a href="/"><FaGithub /></a>
+                    <a href="/"><FaLinkedinIn /></a>
                 </div>
             </div>
         </nav>

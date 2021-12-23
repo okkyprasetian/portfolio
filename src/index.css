@@ -1,5 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&family=Quicksand&display=swap');
+
+/* ===== GLOBAL ===== */
+
+:root {
+  font-family: "Fira Sans";
+  --black: #1D1D1DFF;
+  --black-t: #1D1D1DDD;
+  --purple: #6119F3;
+  --purple-light: #8d5cf0;
+  --teal-light: rgb(0, 255, 255);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.layer {
+  height: 100vh;
+  padding-left: 15%;
+}
+
+/* ===== NAVBAR ===== */
+
+.nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6vh;
+  width: 100%;
+  padding: 0 15%;
+  font-weight: 400;
+  color: white;
+  background-color: var(--black-t);
+}
+
+.logo {
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+}
+
+.menu {
+  margin-right: 2rem;
+}
+
+.menu a {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.menu a:hover {
+  color: var(--teal-light);
+}
+
+.socmed a {
+  margin: 0 0.3rem;
+}
+
+.socmed a:hover {
+  color: var(--teal-light);
+}
+
+.nav-right {
+  display: flex;
+}
+
+
+/* ===== LIFT ===== */
+
+.lift {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 100vh;
+}
+
+.floor {
+  margin: 1rem 0;
+}
+
+.floor * {
+  color: var(--teal-light);
+}
+
+/* ===== HOME =====*/
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 5vh;
+  background-color: var(--black);
+}
+
+#home p {
+  color: white;
+}
+
+.home-hello {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.home-name {
+  font-size: 6rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.okky {
+  color: var(--purple-light);
+}
+
+.home-career {
+  font-size: 1.5rem;
+  font-style: italic;
+  letter-spacing: 0.4rem;
+  word-spacing: 0.4rem;
+}
+
+/* ===== ABOUT ME ===== */
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--purple);
+}
+
+.about-head {
+  margin-bottom: 5rem;
+  font-size: 5rem;
+  color: white;
+}
+
+.about-subhead {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.about-p {
+  width: 40%;
+  margin: 1rem 0 2rem;
+  text-align: justify;
+  color: white;
 }
