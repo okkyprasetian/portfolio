@@ -5,25 +5,30 @@ import Form from './components/Form'
 
 function App() {
 
-  const [scrollPosition, setScrollPosition] = useState(0);
+  // STATE
+  const [scrollPosition, setScrollPosition] = useState(0)
+  const [burger, setBurger] = useState(false)
+
+  // FUNCTION
   const handleScroll = () => {
     const position = window.pageYOffset;
     setScrollPosition(position)
   }
 
+  // USE EFFECT
   useEffect(() => {
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', handleScroll)
     }
   }, [])
 
   return (
     <div className="App">
 
-      <Navbar />
+      <Navbar setBurger={setBurger} burger={burger} />
 
-      <Lift sp={scrollPosition} />
+      <Lift sp={scrollPosition} burger={burger} />
 
       <div id="home" className="layer">
         <p className="home-hello">Hello,</p>
