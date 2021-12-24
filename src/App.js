@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Navbar from "./components/Navbar"
 import Lift from "./components/Lift"
+import Form from './components/Form'
 
 function App() {
 
@@ -38,7 +39,7 @@ function App() {
 
       <div id="about" className="layer">
         <h2 className="about-head">ABOUT</h2>
-        <h5 className="about-subhead">Me</h5>
+        <h5 className="about-subhead">Myself</h5>
         <p className="about-p">I am Okky Prasetia Nugraha, website developer from Indonesia. Currently focus on mastering react.js through build as many good project as possible.</p>
         <h5 className="about-subhead">My Interest</h5>
         <p className="about-p">Website is always fascinate me, seeing transformation website from only static for reading herbal medicine and now almost every modern website is attractive and have interactive experience. This is career i want to pursue.</p>
@@ -50,6 +51,7 @@ function App() {
           <p className="contact-p">
             My inbox is always open, Just contact me. Wheter you only want to say hi or invite me in your project. In case you inviting me, let us create great project together!
           </p>
+          <Form />
         </div>
       </div>
 
