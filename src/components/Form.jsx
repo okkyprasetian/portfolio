@@ -16,8 +16,8 @@ function Form() {
     }
 
     return (
-        <form className="form">
-            <div className="form-container" onSubmit={sendEmail}>
+        <form className="form" onSubmit={sendEmail}>
+            <div className="form-container">
                 <input type="text" className="form-input form-name" placeholder="Name" name="name" />
                 <input type="text" className="form-input form-email" placeholder="Email" name="email" />
                 <input type="text" className="form-input form-subject" placeholder="Subject" name="subject" />
