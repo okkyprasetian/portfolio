@@ -105,6 +105,7 @@ a {
 
 #home p {
   color: white;
+  cursor: default;
 }
 
 .home-hello {
@@ -159,15 +160,18 @@ a {
 
 #contact {
   padding-top: 15vh;
+  color: white;
+  background-color: var(--black);
 }
 
 .contact-head {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 3rem;
 }
 
 .contact-p {
   width: 40%;
+  margin-top: 2rem;
   font-size: 1.5rem;
   letter-spacing: 0.06rem;
   line-height: 2.3rem;
