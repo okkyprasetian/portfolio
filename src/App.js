@@ -39,8 +39,8 @@ function App() {
 
 
       <div id="portfolio" className="layer">
-        <h2>MY PORTFOLIO</h2>
-        <p>A collection of projects i've built</p>
+        <h2 className='portfolio-head'>MY PORTFOLIO</h2>
+        <p className='portfolio-p'>A collection of projects i've built</p>
         <Slider />
       </div>
 

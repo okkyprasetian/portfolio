@@ -28,11 +28,6 @@ a {
   padding-left: 15%;
 }
 
-.pages-img {
-  height: 200px;
-  width: 300px;
-}
-
 /* ===== NAVBAR ===== */
 
 .nav {
@@ -46,6 +41,7 @@ a {
   font-weight: 400;
   color: white;
   background-color: var(--black-t);
+  z-index: 3;
 }
 
 .logo {
@@ -140,42 +136,79 @@ a {
 }
 
 /* ===== Portfolio ===== */
+#portfolio {
+  padding-top: 15vh;
+  background-color: var(--black);
+}
+
+.portfolio-head {
+  font-size: 3rem;
+  color: white;
+}
+
+.portfolio-p {
+  margin-top: 1rem;
+  color: white;
+}
+
+.slider {
+  margin-top: 10vh;
+}
+
 .slider-container {
   position: relative;
   display: flex;
-  width: 900px;
-  height: 200px;
+  align-items: center;
+  width: auto;
+  height: 400px;
+  margin: 0 auto;
   overflow: hidden;
 }
 
 .pages {
   position: absolute;
-  transition: transform 1s linear;
+  left: 3rem;
   opacity: 0;
+  z-index: 1;
+  transition: transform 1s linear;
+}
+
+.pages-img {
+  height: 200px;
+  width: 350px;
+  border-radius: 0.5rem;
 }
 
 .slide-left {
-  transform: translateX(-100%);
+  transform: translateX(-350px);
 }
 
 .slide-active-left {
   transform: translateX(0);
-  opacity: 1;
+  opacity: 0.7;
   transition: all 1s linear;
 }
 
 .slide-active {
-  transform: translateX(100%);
+  transform: translateX(250px);
   opacity: 1;
+  z-index: 2;
+}
+
+.big-img {
+  width: 550px;
+  height: 350px;
+  border-radius: 1rem;
+  transition: all 1s ease;
 }
 
 .slide-active-right {
-  transform: translateX(200%);
-  opacity: 1;
+  transform: translateX(700px);
+  opacity: 0.7;
 }
 
 .slide-right {
-  transform: translateX(300%);
+  transform: translateX(1050px);
   transition: all 1s linear;
 }
 
@@ -377,6 +410,49 @@ a {
 
   .floor * {
     font-size: 1.3rem;
+  }
+
+  /* Portfolio */
+  #portfolio {
+    padding-top: 20vh;
+  }
+
+  .slider {
+    margin-top: 5vh;
+  }
+
+  .pages {
+    left: 0;
+  }
+
+  .slider-container {
+    width: 80vw;
+  }
+
+  .pages-img {
+    height: 100px;
+    width: 150px;
+  }
+
+  .slide-left {
+    transform: translateX(-150px);
+  }
+
+  .slide-active-left {
+    transform: translateX(0);
+  }
+
+  .slide-active {
+    transform: translateX(50px);
+  }
+
+  .slide-active-right {
+    transform: translateX(300px);
+  }
+
+  .big-img {
+    height: 150px;
+    width: 250px;
   }
 
   /* About */

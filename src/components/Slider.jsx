@@ -8,14 +8,14 @@ const Slider = () => {
     const [index, setIndex] = useState([0, 1, 2])
 
     // ===== Set State =====
-    const leftClick = () => {
-        let newIndex = index.map(e => e - 1)
-        setIndex(newIndex)
-    }
-    const rightClick = () => {
-        let newIndex = index.map(e => e + 1)
-        setIndex(newIndex)
-    }
+    // const leftClick = () => {
+    //     let newIndex = index.map(e => e - 1)
+    //     setIndex(newIndex)
+    // }
+    // const rightClick = () => {
+    //     let newIndex = index.map(e => e + 1)
+    //     setIndex(newIndex)
+    // }
 
     // ===== Use Effect =====
 
@@ -36,13 +36,13 @@ const Slider = () => {
                 break
             }
         }
-    }, [index])
+    }, [index, pages.length])
 
     // == auto slide for certain interval time period
     useEffect(() => {
         let slider = setInterval(() => {
             setIndex(index.map(e => e - 1))
-        }, 3000);
+        }, 4000);
         return () => clearInterval(slider)
     }, [index, pages])
 
@@ -52,6 +52,7 @@ const Slider = () => {
             <div className="slider-container">
                 {pages.map((p, pIndex) => {
                     let position = 'slide-right'
+                    let bigImg = null
                     if (pIndex === index[0]) {
                         position = 'slide-active-left'
                     } else if (pIndex === index[1]) {
@@ -62,11 +63,13 @@ const Slider = () => {
                         position = 'slide-left'
                     }
 
+                    if (position === 'slide-active') {
+                        bigImg = 'big-img'
+                    }
+
                     return (
                         <div className={`pages ${position}`} key={p.id}>
-                            <img className='pages-img' src={p.img} alt={p.id} />
-                            <br />
-                            {p.id}
+                            <img className={`pages-img ${bigImg}`} src={p.img} alt={p.id} />
                         </div>
                     )
                 })}
