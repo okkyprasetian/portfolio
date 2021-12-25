@@ -28,6 +28,11 @@ a {
   padding-left: 15%;
 }
 
+.pages-img {
+  height: 200px;
+  width: 300px;
+}
+
 /* ===== NAVBAR ===== */
 
 .nav {
@@ -76,8 +81,6 @@ a {
 .burger {
   display: none
 }
-
-
 
 /* ===== LIFT ===== */
 
@@ -134,6 +137,46 @@ a {
   font-style: italic;
   letter-spacing: 0.4rem;
   word-spacing: 0.4rem;
+}
+
+/* ===== Portfolio ===== */
+.slider-container {
+  position: relative;
+  display: flex;
+  width: 900px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.pages {
+  position: absolute;
+  transition: transform 1s linear;
+  opacity: 0;
+}
+
+.slide-left {
+  transform: translateX(-100%);
+}
+
+.slide-active-left {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 1s linear;
+}
+
+.slide-active {
+  transform: translateX(100%);
+  opacity: 1;
+}
+
+.slide-active-right {
+  transform: translateX(200%);
+  opacity: 1;
+}
+
+.slide-right {
+  transform: translateX(300%);
+  transition: all 1s linear;
 }
 
 /* ===== ABOUT ME ===== */

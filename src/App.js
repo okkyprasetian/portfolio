@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Navbar from "./components/Navbar"
 import Lift from "./components/Lift"
+import Slider from './components/Slider'
 import Form from './components/Form'
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
       <div id="portfolio" className="layer">
         <h2>MY PORTFOLIO</h2>
         <p>A collection of projects i've built</p>
+        <Slider />
       </div>
 
       <div id="about" className="layer">
