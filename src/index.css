@@ -443,7 +443,7 @@ a {
   }
 
   .slide-active {
-    transform: translateX(50px);
+    transform: translateX(25px);
   }
 
   .slide-active-right {
