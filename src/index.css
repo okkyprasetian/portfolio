@@ -338,23 +338,37 @@ a {
 
   /* About */
 
+  #about {
+    padding-top: 4rem;
+  }
+
+  .about-head {
+    margin-bottom: 2rem;
+  }
+
   .about-subhead {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
   .about-p {
     width: 70%;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
     line-height: 1.7rem;
   }
 
   /* Mobile Contact */
+
+  #contact {
+    height: 105vh;
+  }
+
   .contact-content {
     flex-direction: column;
   }
 
   .contact-p {
-    width: 100%;
+    width: 99%;
     font-size: 1.1rem;
     letter-spacing: 0;
   }
@@ -370,6 +384,10 @@ a {
     height: 35vh;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 0.7rem;
+  }
+
+  .form-input {
+    padding-bottom: 0;
   }
 
   .form-btn {
