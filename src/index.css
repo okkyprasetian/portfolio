@@ -332,6 +332,22 @@ a {
     display: none;
   }
 
+  .floor * {
+    font-size: 1.3rem;
+  }
+
+  /* About */
+
+  .about-subhead {
+    margin-top: 2rem;
+  }
+
+  .about-p {
+    width: 70%;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
   /* Mobile Contact */
   .contact-content {
     flex-direction: column;
@@ -339,7 +355,7 @@ a {
 
   .contact-p {
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     letter-spacing: 0;
   }
 
@@ -353,6 +369,7 @@ a {
     width: 100%;
     height: 35vh;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 0.7rem;
   }
 
   .form-btn {
