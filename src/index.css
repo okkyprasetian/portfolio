@@ -41,7 +41,7 @@ a {
   font-weight: 400;
   color: white;
   background-color: var(--black-t);
-  z-index: 3;
+  z-index: 5;
 }
 
 .logo {
@@ -192,7 +192,7 @@ a {
 .slide-active {
   transform: translateX(250px);
   opacity: 1;
-  z-index: 2;
+  z-index: 3;
 }
 
 .big-img {
@@ -426,7 +426,7 @@ a {
   }
 
   .slider-container {
-    width: 80vw;
+    width: 82vw;
   }
 
   .pages-img {
@@ -447,7 +447,11 @@ a {
   }
 
   .slide-active-right {
-    transform: translateX(300px);
+    transform: translateX(200px);
+  }
+
+  .slide-right {
+    transform: translateX(350px);
   }
 
   .big-img {
