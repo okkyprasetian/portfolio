@@ -9,7 +9,7 @@ const Navbar = ({ burger, setBurger }) => {
     }
 
     return (
-        <nav className="nav" style={{ backgroundColor: `${burger ? '#1D1D1D' : '#1D1D1DDD'}` }}>
+        <nav className="nav" style={{ backgroundColor: `${burger ? '#111113' : '#111113'}` }}>
             <h2 className="logo">Eiyuulia</h2>
             <div className="nav-right">
                 <div className={`menu ${burger && 'menu-on'}`}>

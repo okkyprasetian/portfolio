@@ -4,10 +4,11 @@
 
 :root {
   font-family: "Fira Sans";
-  --black: #1D1D1DFF;
+  --black: #111113;
   --black-t: #1D1D1DDD;
   --purple: #6119F3;
   --purple-light: #8d5cf0;
+  --blue: #2c77c3;
   --teal-light: rgb(0, 255, 255);
 }
 
@@ -40,7 +41,7 @@ a {
   padding: 0 15%;
   font-weight: 400;
   color: white;
-  background-color: var(--black-t);
+  background-color: var(--black);
   z-index: 5;
 }
 
@@ -105,7 +106,8 @@ a {
   flex-direction: column;
   justify-content: center;
   padding-bottom: 5vh;
-  background-color: var(--black);
+  background-image: url(/public/images/dominik.jpg);
+  background-size: cover;
 }
 
 #home p {
@@ -125,7 +127,7 @@ a {
 }
 
 .okky {
-  color: var(--purple-light);
+  color: var(--blue);
 }
 
 .home-career {
@@ -217,7 +219,9 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--purple);
+  background-image: url(/public/images/werner.jpg);
+  background-position-y: top;
+  background-position-x: left;
 }
 
 .about-head {
@@ -457,6 +461,7 @@ a {
   .big-img {
     height: 150px;
     width: 250px;
+    border-radius: 0.7rem;
   }
 
   /* About */
