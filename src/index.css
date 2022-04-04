@@ -220,8 +220,6 @@ a {
   flex-direction: column;
   justify-content: center;
   background-image: url(/public/images/werner.jpg);
-  background-position-y: top;
-  background-position-x: left;
 }
 
 .about-head {
