@@ -18,7 +18,7 @@ const Navbar = ({ burger, setBurger }) => {
                     <a href="#contact" onClick={handleClick}>Contact</a>
                 </div>
                 <div className="socmed">
-                    <a href="/"><FaGithub /></a>
+                    <a href="https://github.com/okkyprasetian" target="_blank" rel="noreferrer"><FaGithub /></a>
                     <a href="/"><FaLinkedinIn /></a>
                 </div>
                 <div className="burger" onClick={handleClick}>

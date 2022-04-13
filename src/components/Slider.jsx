@@ -69,7 +69,9 @@ const Slider = () => {
 
                     return (
                         <div className={`pages ${position}`} key={p.id}>
-                            <img className={`pages-img ${bigImg}`} src={p.img} alt={p.id} />
+                            <a href={p.link} target='_blank' rel="noreferrer">
+                                <img className={`pages-img ${bigImg}`} src={p.img} alt={p.id} />
+                            </a>
                         </div>
                     )
                 })}
